@@ -1,5 +1,5 @@
 {
-  "name": "ssss-bootstrap",
+  "name": "kkorea",
   "version": "1.0.0",
   "description": "A sample Bootstrap site for deployment demonstrations.",
   "main": "index.html",
@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "usemin": "usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html"
   },
-  "author": "Minae Lee",
+  "author": "Andrea Motta",
   "license": "ISC",
   "devDependencies": {
     "copyfiles": "^2.2.0",
