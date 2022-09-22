@@ -1,7 +1,7 @@
 {
   "name": "kkorea",
   "version": "1.0.0",
-  "description": "A sample Bootstrap site for deployment demonstrations.",
+  "description": "This is a website for a local Korean restaurant in Spokane, WA",
   "main": "index.html",
   "scripts": {
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
@@ -11,7 +11,8 @@
     "lite": "lite-server",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html"
+    "usemin": "usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "author": "Andrea Motta",
   "license": "ISC",
@@ -19,6 +20,8 @@
     "copyfiles": "^2.2.0",
     "imagemin-cli": "^5.1.0",
     "lite-server": "^2.5.4",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
     "rimraf": "^3.0.2",
     "usemin-cli": "^0.6.0"
   },
